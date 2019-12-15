@@ -1,0 +1,8 @@
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Repositorio.deps.json
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Repositorio.dll
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Repositorio.pdb
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcoreapp3.0\QuickBuy.Repositorio.csprojAssemblyReference.cache
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcoreapp3.0\QuickBuy.Repositorio.AssemblyInfoInputs.cache
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcoreapp3.0\QuickBuy.Repositorio.AssemblyInfo.cs
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcoreapp3.0\QuickBuy.Repositorio.dll
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcoreapp3.0\QuickBuy.Repositorio.pdb
