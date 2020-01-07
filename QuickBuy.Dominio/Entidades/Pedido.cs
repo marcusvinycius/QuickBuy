@@ -18,14 +18,18 @@ namespace QuickBuy.Dominio.Entidades
         public string NumeroEndereco { get; set; }
         public int FormaPagamentoId { get; set; }
         public FormaPagamento FormaPagamento { get; set; }
-
-        public override void Validade()
+        
+        public override void Validate()
         {
             LimparMensagemValidacao();
             if (!ItensPedido.Any())
-                AdicionarCritica("Critica - Pedido não pode ficar sem item de pedido");
+                AdicionarCritica("Crítica - Pedido não pode ficar sem item de pedido");
+
             if (String.IsNullOrEmpty(CEP))
-                AdicionarCritica("Critica - `CEP deve estar preenchido");
+                AdicionarCritica("Crítica - CEP deve estar preenchido");
+
+            if (FormaPagamentoId == 0)
+                AdicionarCritica("Crítica - Forma de Pagamento deve estar preenchida");
         }
     }
 
