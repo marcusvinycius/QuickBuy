@@ -1,0 +1,8 @@
+{
+  "ConnectionStrings": {
+
+    "SqlServerConnection": "Server=localhost;Database=QuickBuyBD;User Id=sa;Password=mrktplc;",
+    "MySqlConnection": "Server=localhost;Database=QuickBuyBD;Uid=sa;Pwd=mrktplc;",
+    "QuickBuyBD": "Server=localhost;Database=QuickBuyBD;User Id=sa;Password=mrktplc;"
+  }
+}

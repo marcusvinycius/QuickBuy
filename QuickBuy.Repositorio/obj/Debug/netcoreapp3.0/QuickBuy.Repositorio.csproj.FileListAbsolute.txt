@@ -9,3 +9,5 @@ D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcorea
 D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Dominio.dll
 D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Dominio.pdb
 D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\obj\Debug\netcoreapp3.0\QuickBuy.Repositorio.csproj.CopyComplete
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Repositorio.runtimeconfig.json
+D:\Source\Repos\marcus_vinycius\QuickBuy\QuickBuy.Repositorio\bin\Debug\netcoreapp3.0\QuickBuy.Repositorio.runtimeconfig.dev.json
