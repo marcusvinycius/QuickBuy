@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using QuickBuy.Repositorio.Contexto;
 using QuickBuy.Repositorio;
 using Microsoft.EntityFrameworkCore;
+using QuickBuy.Repositorio.Repositorios;
+using QuickBuy.Dominio.Contratos;
 
 namespace QuickBuy.Web
 {
@@ -37,11 +39,20 @@ namespace QuickBuy.Web
                                                         option.UseMySql(connectionString,
                                                                             m => m.MigrationsAssembly("QuickBuy.Repositorio")));
             */
+            /*
+             * Variavel "QuickBuyBD" está no arquivo config.json
+             * "UseLazyLoadingProxies" Pertmite carregamento de forma automatica dos relacionamentos
+             *      Ex: O usuario tem pedido, Quando consultar o usuario, faz o carregamento de todos os pedidos ligados a ele automaticamente
+             */
             var connectionString = Configuration.GetConnectionString("QuickBuyBD");
             services.AddDbContext<QuickBuyContexto>(option => 
-                                                        option.UseSqlServer(connectionString, 
-                                                                            s => s.MigrationsAssembly("QuickBuy.Repositorio")));
+                                                        option
+                                                            .UseLazyLoadingProxies()
+                                                            .UseSqlServer(connectionString, 
+                                                                                s => s.MigrationsAssembly("QuickBuy.Repositorio")));
             
+            services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

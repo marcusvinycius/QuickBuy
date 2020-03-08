@@ -18,14 +18,41 @@ namespace QuickBuy.Repositorio.Contexto
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) //Construir modelo para o contexto
         {
-            //classes de mapeamento
+            //classes de mapeamento e relacionamentos entre classes
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
             modelBuilder.ApplyConfiguration(new PedidoConfiguration());
             modelBuilder.ApplyConfiguration(new ItemPedidoConfiguration());
             modelBuilder.ApplyConfiguration(new FormaPagamentoConfiguration());
+
+            modelBuilder.Entity<FormaPagamento>().HasData(
+                    new FormaPagamento() 
+                    { 
+                        Id = 1, 
+                        Nome = "Boleto", 
+                        Descricao = "Forma de Pagamento Boleto"
+                    },
+                    new FormaPagamento()
+                    {
+                        Id = 2,
+                        Nome = "Cartão Crédito",
+                        Descricao = "Forma de Pagamento Cartão Crédito"
+                    },
+                    new FormaPagamento()
+                    {
+                        Id = 3,
+                        Nome = "Cartão Débito",
+                        Descricao = "Forma de Pagamento Cartão Débito"
+                    },
+                    new FormaPagamento()
+                    {
+                        Id = 4,
+                        Nome = "Depósito",
+                        Descricao = "Forma de Pagamento Depósito"
+                    }
+            );
 
             base.OnModelCreating(modelBuilder);
         }

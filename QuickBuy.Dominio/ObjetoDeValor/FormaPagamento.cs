@@ -12,9 +12,13 @@ namespace QuickBuy.Dominio.ObjetoDeValor
         {
             get {return Id == (int)TipoFormaPagamentoEnum.Boleto; }
         }
-        public bool EhCartao
+        public bool EhCartaoCredito
         {
             get { return Id == (int)TipoFormaPagamentoEnum.CartaoCredito; }
+        }
+        public bool EhCartaoDebito
+        {
+            get { return Id == (int)TipoFormaPagamentoEnum.CartaoDebito; }
         }
         public bool EhDeposito
         {

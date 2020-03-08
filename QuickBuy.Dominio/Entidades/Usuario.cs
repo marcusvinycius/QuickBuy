@@ -11,7 +11,13 @@ namespace QuickBuy.Dominio.Entidades
 
         public string Nome { get; set; }
         public string SobreNome { get; set; }
-        public ICollection<Pedido> Pedidos { get; set; }
+
+        /*Um usuario pode ter nenhum ou muitos pedidos
+         *"virtual" permite o carregamento por demanda, ou seja, sempre que consultar o usuario o sistema carrega os pedidos viculados
+         * Obs.: Tem que Habilitar a propriedade "UseLazyLoadingProxies" no Startup.cs
+         *       Tem que colocar a propriedade "virtual" na classe Pedido também para o método Usuario
+        */
+        public virtual ICollection<Pedido> Pedidos { get; set; }
 
         public override void Validate()
         {
